@@ -31,5 +31,6 @@ Route::group(['prefix' => 'account'], function () {
         Route::get('/logout', [AccountController::class, 'login'])->name('account.login');
         Route::get('/profile', [AccountController::class, 'profile'])->name('account.profile');
         Route::put('/update-profile', [AccountController::class, 'updateProfile'])->name('account.updateProfile');
+        Route::post('/update-profile-pc', [AccountController::class, 'updateProfilePic'])->name('account.updateProfilePic');
     });
 });
